@@ -13,22 +13,26 @@
             <h2>Tento virtual</h2>
         </header>
         <main>
-            <div id="marcador">0</div>
+            <div id="marcador"></div>
         </main>
         <footer>
             <section>
                 <ul id="lista" type="none">
-                    <li>+2</li>
-                    <li>+4 </li>
-                    <li>+6</li>
-                    <li>+8</li>
-                    <li>+10</li>
-                    <li>+12</li>
+                    <li id="2" onclick="somar(2)">+2</li>
+                    <li id="n4" onclick="somar(4)">+4</li>
+                    <li id="n6" onclick="somar(6)">+6</li>
+                    <li id="n8" onclick="somar(8)">+8</li>
+                    <li id="n10" onclick="somar(10)">+10</li>
+                    <li id="n12" onclick="somar(12)">+12</li>
                 </ul>
-                <div id="limpar"><input type="button" value="Limpar"></div>
+                <div id="botoes">
+                    <input type="button" value="Limpar" id="limpar" onclick="limparMarcador()">
+                    <input type="button" value="Restaurar" id="restore" onclick="restaurar()">
+                </div>
             </section>
         </footer>
         
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
